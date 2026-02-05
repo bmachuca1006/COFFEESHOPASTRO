@@ -10,10 +10,11 @@ const navigation = [
 ]
 ---
 
-<nav>
+<nav class="flex flex-col items-center lg:flex-row gap-3">
     {navigation.map(item => 
         <a
             href={item.href}
+            class="uppercase text-lg font-bold text-white"
         >{item.name}</a>
     )}
 </nav>
